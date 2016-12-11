@@ -48,7 +48,7 @@ cross-platform.
 
 Did you install Python 2 or 3? Why?  
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> I installed Python 2 because the bootcamp is currently based on version 2.7 and the other exposure I've had to 2.7 previously. It seems to still be in widespread use.
 
 ###Q2. Which Python Version Installed   
 
