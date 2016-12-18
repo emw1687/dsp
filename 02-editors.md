@@ -60,7 +60,7 @@ We will also use Jupyter (IPython) notebooks, but this does not remove the need 
 
 What terminal editor will you use? How did you make your decision?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> I'm planning to use vim. To make my decision, I asked friends who work in software engineering for recommendations. I also was deterred from using Emacs due to the notorious Emacs pinky.
 
 --
 
