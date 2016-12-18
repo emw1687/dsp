@@ -68,6 +68,14 @@ What terminal editor will you use? How did you make your decision?
 
 What graphical editor will you use? How did you make your decision? What are some interesting features of your editor? What are some useful keyboard shortcuts for your editor? How do you customize your editor?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> I'm planning to use Atom because I have been using it for a while and haven't had any major complaints. 
 
+>> Though I'm not sure that these interesting features are unique to Atom, the ability to modify several lines at once (i.e. indent/outdent) is great. I also frequently use multiple panes and windows, as well as opening a whole project folder (rather than just a single file). Atom is also integrated with Git and GitHub.
+
+>> Useful keyboard shortcuts:
+* Ctrl + F: find
+* Command + k + arrow: split window in direction of arrow
+* Command + \: toggle tree view
+
+>> Atom can be customized in pretty much any way imagined, or so it seems, by editing the config files which are written in CSON. Themes/styles, keybindings, and language-specific settings can all be changed. I haven't made any customizations yet but will pay attention to pain points as I use Atom to see if there is something I can improve upon from the default settings.
  
