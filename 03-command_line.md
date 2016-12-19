@@ -59,7 +59,7 @@ Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) 
 
 What does `xargs` do? Give an example of how to use it.
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+> > `xargs` executes a command or commands on a list of arguments, which are created through standard input or piped from other commands (i.e. using `|`). For example, `find \temp . -name "*.txt" | xargs rm -rf ` could be used first to generate a list of all .txt files in the temp directory, and the pipe the output to xargs which would delete each file in the list.
 
  
 
