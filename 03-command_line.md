@@ -9,7 +9,16 @@ tutorial](https://web.archive.org/web/20160708171659/http://cli.learncodethehard
 
 Make a cheat sheet for yourself: a list of at least **ten** commands and what they do, focused on things that are new, interesting, or otherwise worth remembering.
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+> > 1. `pushd [path]` add path to top of directory list and navigate to path
+2. `pushd` navigate back to last path pushed (at top of directory stack)
+3. `popd` move to last path pushed, but also remove that path from directory stack
+4. `touch [filename]` make a new empty file
+5. `cp [originalfilename][copyfilename]` copy a file
+6. `cp -r [originaldirectoryname] [copydirectoryname]` copy a directory and its contents
+7. `less [filename]` displays (paginated) file on screen
+8. `rm [filename]` removes a file
+9. `rm -r [directoryname]` removes a directory and all of its files (recursively)
+10. `[command]|[command]` executes command on left and sends output to command on right (can be used to combine commands)
 
 ---
 
