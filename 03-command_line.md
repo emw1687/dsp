@@ -47,7 +47,11 @@ What do the following commands do:
 
 Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) and pick 5 of your favorites:
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+> > 1. `-1` to display each item in the list on its own line
+2. `-m` to display as a comma-separated list
+3. `-d` to display just directories
+4. `-u` to display in descending order of last time accessed
+5. `-r` to dislay in reverse (i.e. `-ur` to display in ascending order of last time accessed)
 
 ---
 
