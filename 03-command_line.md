@@ -38,7 +38,7 @@ What do the following commands do:
 * `ls -l` displays visible files in current working directory as long format list
 * `ls -lh` displays visible files in current working directory as long format list with units on file sizes
 * `ls -lah` displays all files in current working directory as long format list with units on files sizes
-* `ls -t` displays visible files in current working directory in descending order of last time modified
+* `ls -t` displays visible files in current working directory in descending order of time created
 * `ls -Glp` displays visible files in current working directory as long format list with colors and indicators for different file types
 
 ---
