@@ -12,7 +12,11 @@ For quick and easy interactive practice with Python, many people enjoy [Codecade
 
 How are Python lists and tuples similar and different? Which will work as keys in dictionaries? Why?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> Lists and tuples are both groups of values, which are indexed by integers. However, lists changes be changed (i.e. they are mutable) while tuples cannot (i.e. they are immutable).
+
+>> For this reason, tuples will work as keys in dictionaries while lists will not. Dictionaries are unordered groups of key-value pairs; key-value pairs are associated with each other using a hash function. Keys are passed to a hash function, which returns a hash value. The hash value is then used to quickly find the value of the key.
+
+>> The issue arises due to the mutability of lists. If a key in the list of keys is changed, then the hash function may not return the correct hash value and the key's value may not be found.
 
 ---
 
@@ -85,8 +89,3 @@ Edit the 5 functions in [q7_lists.py](python/q7_lists.py)
 
 ###Q8. Parsing
 Edit the 3 functions in [q8_parsing.py](python/q8_parsing.py)
-
-
-
-
-
