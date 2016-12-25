@@ -84,7 +84,42 @@ Describe Python's `lambda`. What is it, and what is it used for? Give at least o
 
 Explain list comprehensions. Give examples and show equivalents with `map` and `filter`. How do their capabilities compare? Also demonstrate set comprehensions and dictionary comprehensions.
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> List comprehensions programmatically create lists. For example, the following list comprehension creates a list of integers from 1 to 5.
+```python
+>>> nums = [x for x in range(1,6)]
+>>> print(nums)
+[1, 2, 3, 4, 5]
+```
+
+>> List comprehensions are also commonly used to create a new list from an existing list, applying the given function to each element of the existing list. (Note that `nums` in the examples below could be replaced with its definition above, thereby creating the "existing" list in the same line of code as creating the "new" list.) The equivalent can be done using `map`, which applies the given function parameter to each element of the iterable parameter. For example, `nums_comp` below is created using list comprehensions while `nums_map` is created using `map`.
+```python
+>>> nums_comp = [5*x for x in nums]
+>>> nums_map = list(map(lambda x: 5*x, nums))
+>>> print(nums_comp)
+[5, 10, 15, 20, 25]
+>>> print(nums_map)
+[5, 10, 15, 20, 25]
+```
+
+>> Similarly, list comprehensions can create a list equivalent to one created by using both `map` and `filter`. For example, `tens_comp` below is created using list comprehensions while `tens_mf` is created using both `map` and `filter`.
+```python
+>>> tens_comp = [5*x for x in nums if 5*x%10 == 0]
+>>> tens_mf = list(filter(lambda x: x%10 == 0, (map(lambda x: 5*x, nums))))
+>>> print(tens_comp)
+[10, 20]
+>>> print(tens_mf)
+[10, 20]
+```
+
+>> Set and dictionary comprehensions can also be used to programmatically creates sets and dictionaries, respectively, as shown below.
+```python
+>>> nums_set = {x for x in nums}
+>>> print(nums_set)
+set([1, 2, 3, 4, 5])
+>>> nums_dict = {x: 5*x for x in nums}
+>>> print(nums_dict)
+{1: 5, 2: 10, 3: 15, 4: 20, 5: 25}
+```
 
 ---
 
