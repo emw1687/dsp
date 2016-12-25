@@ -48,7 +48,35 @@ set(['grape', 'apple', 'peach', 'kiwi'])
 
 Describe Python's `lambda`. What is it, and what is it used for? Give at least one example, including an example of using a `lambda` in the `key` argument to `sorted`.
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> Lambda is Python's anonymous function construct. Lambda functions may contain only one expression and always return a value. Lambda functions are useful in situations when a single function is needed just once; rather than define a named function and call it, a lambda function may be defined and used directly at the point where the function is needed.
+
+>>A lambda function could be used with the built-in `sorted` function to change which parameter is used for sorting. For example, the following list stores tuples of the names of the months and their corresponding number.
+```python
+>>> months = [
+  (1, 'January'),
+  (2, 'February'),
+  (3, 'March'),
+  (4, 'April'),
+  (5, 'May'),
+  (6, 'June'),
+  (7, 'July'),
+  (8, 'August'),
+  (9, 'September'),
+  (10, 'October'),
+  (11, 'November'),
+  (12, 'December'),
+]
+```
+>>Calling `sorted` without a `key` function returns a list sorted by the first item in each tuple.
+```python
+>>> sorted(months)
+[(1, 'January'), (2, 'February'), (3, 'March'), (4, 'April'), (5, 'May'), (6, 'June'), (7, 'July'), (8, 'August'), (9, 'September'), (10, 'October'), (11, 'November'), (12, 'December')]
+```
+>> A lambda function could be used in the `key` argument to sort the list alphabetically by the name of the months, or the second item in each tuple.
+```python
+>>> sorted(months, key=lambda month: month[1])
+[(4, 'April'), (8, 'August'), (12, 'December'), (2, 'February'), (1, 'January'), (7, 'July'), (6, 'June'), (3, 'March'), (5, 'May'), (11, 'November'), (10, 'October'), (9, 'September')]
+```
 
 ---
 
