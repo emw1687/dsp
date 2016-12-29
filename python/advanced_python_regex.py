@@ -1,7 +1,6 @@
 import string
 import re
 
-handle = open("faculty.csv")
 degrees = list() #degrees and frequencies
 titles = list() #titles and frequencies
 emails = list() #all email addresses
@@ -21,20 +20,21 @@ def print_list(things):
     for thing in things:
         print thing
 
-for line in handle:
-    line = line.split(',')
-    if line[0] == 'name' : continue
-    try:
-        degree = line[1].translate(None, string.punctuation)
-        degrees.extend(re.findall('\s*([A-Za-z]+)\s*', degree))
-        title = re.findall('([\w\s]*Professor)', line[2])
-        titles.append(title[0])
-        email = line[3].rstrip()
-        emails.append(email)
-        domain = re.findall('\S+@(\S+)', email)
-        domains.add(domain[0])
-    except:
-        continue
+with open("faculty.csv") as facultycsv:
+    for line in facultycsv:
+        line = line.split(',')
+        if line[0] == 'name' : continue
+        try:
+            degree = line[1].translate(None, string.punctuation)
+            degrees.extend(re.findall('\s*([A-Za-z]+)\s*', degree))
+            title = re.findall('([\w\s]*Professor)', line[2])
+            titles.append(title[0])
+            email = line[3].rstrip()
+            emails.append(email)
+            domain = re.findall('\S+@(\S+)', email)
+            domains.add(domain[0])
+        except:
+            continue
 
 degrees_count = count_list(degrees)
 titles_count = count_list(titles)
