@@ -13,6 +13,6 @@ with open('faculty.csv') as facultycsv:
             continue
 
 with open('emails.csv', 'w') as emailcsv:
-    writer = csv.writer(emailcsv, delimiter=' ', quotechar='|', quoting=csv.QUOTE_MINIMAL)
+    writer = csv.writer(emailcsv, quoting=csv.QUOTE_MINIMAL)
     for email in emails:
         writer.writerow([email])
