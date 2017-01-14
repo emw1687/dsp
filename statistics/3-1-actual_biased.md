@@ -26,3 +26,5 @@ biased_pmf = BiasPmf(actual_pmf, label='biased')
 >> **Solution**
 
 >> As shown in the plot below, if children has been asked to report the number of children under 18 in their household, the distribution would not accurately reflect the actual distribution. Families with no children would not have any children to report that no children were present in the family, which families with five children would have five children to report that five children are present in the family. This is further reflected in the means of the distributions: the actual mean is 1.0 children per household while the biased mean is 2.4 children per household.
+
+>> ![NumKids](/statistics/3-1numkids.png)
