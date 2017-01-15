@@ -124,10 +124,6 @@ How do frequentist and Bayesian statistics compare?
 | Background information is not used to update parameter values; parameter values are assumed to be constant | Background information is used to update the distribution of parameters |   
 
 
->> Frequentist statistics treats a probability as a single point while Bayesian statistics treats probability as a distribution.
-
->> Bayesian statistics allows for
-
 ---
 
 ## <a name="section-d"></a>4.  Optional Exercises
